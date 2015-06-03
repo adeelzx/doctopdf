@@ -33,11 +33,8 @@ public class CreateWordprocessingMLDocument extends AbstractSample {
 		System.out.println( "Creating package..");
 		WordprocessingMLPackage wordMLPackage = WordprocessingMLPackage.createPackage();
 		
-		wordMLPackage.getMainDocumentPart()
-			.addStyledParagraphOfText("Title", "Hello world");
-
+		wordMLPackage.getMainDocumentPart().addStyledParagraphOfText("Title", "Hello world");
 		wordMLPackage.getMainDocumentPart().addParagraphOfText("from docx4j!");
-		
 		
 		ObjectFactory factory = new ObjectFactory();
 		P  p = factory.createP();
